@@ -24,6 +24,22 @@ public class mathOpsFloat {
         }
     }
 
+    void squareA() {
+        System.out.println("Square A = "+a*a);
+    }
+
+    void cubeA() {
+        System.out.println("Cube A = "+a*a*a);
+    }
+
+    void squareB() {
+        System.out.println("Square B = "+b*b);
+    }
+
+    void cubeB() {
+        System.out.println("Cube B = "+b*b*b);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
@@ -41,7 +57,7 @@ public class mathOpsFloat {
             obj.b = b;
 
             System.out.println("\nEnter the choice:");
-            System.out.println("1. Addition  2. Subtraction  3. Multiplication  4. Division  5. Exit");
+            System.out.println("1. Addition  2. Subtraction  3. Multiplication  4. Division  5. Square of A  6.Cube  of A  7.Square of B  8.Cube of B  9.Exit");
             int choice = scanner.nextInt();
 
             switch (choice) {
@@ -58,6 +74,18 @@ public class mathOpsFloat {
                     obj.div();
                     break;
                 case 5:
+                    obj.squareA();
+                    break;
+                case 6:
+                    obj.cubeA();
+                    break;
+                case 7:
+                    obj.squareB();
+                    break;
+                case 8:
+                    obj.cubeB();
+                    break;
+                case 9:
                     exit = true;
                     System.out.println("Exiting the program.");
                     break;
